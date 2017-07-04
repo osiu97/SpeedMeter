@@ -20,6 +20,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Chronometer;
+import android.widget.TextClock;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -49,6 +50,7 @@ public class MainActivity extends ActionBarActivity implements LocationListener,
     private TextView averageSpeed;
     private TextView distance;
     private Chronometer time;
+    private TextClock clock;
     private Data.onGpsServiceUpdate onGpsServiceUpdate;
 
     private boolean firstfix;
@@ -92,6 +94,7 @@ public class MainActivity extends ActionBarActivity implements LocationListener,
         maxSpeed = (TextView) findViewById(R.id.maxSpeed);
         averageSpeed = (TextView) findViewById(R.id.averageSpeed);
         distance = (TextView) findViewById(R.id.distance);
+        clock = (TextClock) findViewById(R.id.clock);
         time = (Chronometer) findViewById(R.id.time);
         currentSpeed = (TextView) findViewById(R.id.currentSpeed);
         progressBarCircularIndeterminate = (ProgressBarCircularIndeterminate) findViewById(R.id.progressBarCircularIndeterminate);
